@@ -5,7 +5,7 @@ Requires (to compile):<br/>
 `Android 6.0 (API 23) SDK Platform`
 
 Subversion checkout URL:<br/>
-* https://github.com/dandar3/android-preference-v7/tags/23.0.0
+* https://github.com/dandar3/android-support-v7-preference/tags/23.0.0
 
 References:
 * https://developer.android.com/tools/support-library/index.html#revisions
