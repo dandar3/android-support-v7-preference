@@ -10,42 +10,42 @@
     <declare-styleable name="PreferenceImageView"><attr format="dimension" name="maxWidth"/><attr name="android:maxWidth"/><attr format="dimension" name="maxHeight"/><attr name="android:maxHeight"/></declare-styleable>
     <declare-styleable name="SwitchPreferenceCompat"><attr name="summaryOn"/><attr name="android:summaryOn"/><attr name="summaryOff"/><attr name="android:summaryOff"/><attr format="string" name="switchTextOn"/><attr name="android:switchTextOn"/><attr format="string" name="switchTextOff"/><attr name="android:switchTextOff"/><attr name="disableDependentsState"/><attr name="android:disableDependentsState"/></declare-styleable>
     <declare-styleable name="Theme"><attr format="reference" name="preferenceTheme"/><attr format="reference" name="preferenceScreenStyle"/><attr format="reference" name="preferenceActivityStyle"/><attr format="reference" name="preferenceFragmentStyle"/><attr format="reference" name="preferenceCategoryStyle"/><attr format="reference" name="preferenceStyle"/><attr format="reference" name="preferenceInformationStyle"/><attr format="reference" name="checkBoxPreferenceStyle"/><attr format="reference" name="yesNoPreferenceStyle"/><attr format="reference" name="dialogPreferenceStyle"/><attr format="reference" name="editTextPreferenceStyle"/><attr format="reference" name="ringtonePreferenceStyle"/><attr format="reference" name="preferenceLayoutChild"/><attr format="reference" name="preferencePanelStyle"/><attr format="reference" name="preferenceHeaderPanelStyle"/><attr format="reference" name="preferenceListStyle"/><attr format="reference" name="preferenceFragmentListStyle"/><attr format="dimension" name="preferenceFragmentPaddingSide"/><attr format="reference" name="switchPreferenceStyle"/><attr format="reference" name="switchPreferenceCompatStyle"/><attr format="reference" name="seekBarPreferenceStyle"/></declare-styleable>
-    <!-- From: file:/usr/local/google/buildbot/repo_clients/https___googleplex-android.googlesource.com_a_platform_manifest.git/mnc-sdk-release/frameworks/support/v7/preference/res/values/strings.xml -->
+    <!-- From: file:/usr/local/google/buildbot/repo_clients/https___googleplex-android.googlesource.com_a_platform_manifest.git/mnc-supportlib-release/frameworks/support/v7/preference/res/values/strings.xml -->
     <eat-comment/>
     <string name="v7_preference_off">OFF</string>
     <string name="v7_preference_on">ON</string>
-    <!-- From: file:/usr/local/google/buildbot/repo_clients/https___googleplex-android.googlesource.com_a_platform_manifest.git/mnc-sdk-release/frameworks/support/v7/preference/res/values/styles.xml -->
+    <!-- From: file:/usr/local/google/buildbot/repo_clients/https___googleplex-android.googlesource.com_a_platform_manifest.git/mnc-supportlib-release/frameworks/support/v7/preference/res/values/styles.xml -->
     <eat-comment/>
     <style name="Preference">
-        <item name="layout">@layout/preference</item>
+        <item name="android:layout">@layout/preference</item>
     </style>
     <style name="Preference.Category">
-        <item name="layout">@layout/preference_category</item>
+        <item name="android:layout">@layout/preference_category</item>
         <!-- The title should not dim if the category is disabled, instead only the preference children should dim. -->
-        <item name="shouldDisableView">false</item>
-        <item name="selectable">false</item>
+        <item name="android:shouldDisableView">false</item>
+        <item name="android:selectable">false</item>
     </style>
     <style name="Preference.CheckBoxPreference">
-        <item name="widgetLayout">@layout/preference_widget_checkbox</item>
+        <item name="android:widgetLayout">@layout/preference_widget_checkbox</item>
     </style>
     <style name="Preference.DialogPreference">
-        <item name="positiveButtonText">@android:string/ok</item>
-        <item name="negativeButtonText">@android:string/cancel</item>
+        <item name="android:positiveButtonText">@android:string/ok</item>
+        <item name="android:negativeButtonText">@android:string/cancel</item>
     </style>
     <style name="Preference.DialogPreference.EditTextPreference">
-        <item name="dialogLayout">@layout/preference_dialog_edittext</item>
+        <item name="android:dialogLayout">@layout/preference_dialog_edittext</item>
     </style>
     <style name="Preference.Information">
-        <item name="layout">@layout/preference_information</item>
-        <item name="enabled">false</item>
-        <item name="shouldDisableView">false</item>
+        <item name="android:layout">@layout/preference_information</item>
+        <item name="android:enabled">false</item>
+        <item name="android:shouldDisableView">false</item>
     </style>
     <style name="Preference.PreferenceScreen">
     </style>
     <style name="Preference.SwitchPreferenceCompat">
-        <item name="widgetLayout">@layout/preference_widget_switch_compat</item>
-        <item name="switchTextOn">@string/v7_preference_on</item>
-        <item name="switchTextOff">@string/v7_preference_off</item>
+        <item name="android:widgetLayout">@layout/preference_widget_switch_compat</item>
+        <item name="android:switchTextOn">@string/v7_preference_on</item>
+        <item name="android:switchTextOff">@string/v7_preference_off</item>
     </style>
     <style name="PreferenceFragment">
         <item name="android:paddingLeft">0dp</item>
@@ -55,7 +55,7 @@
         <item name="android:paddingLeft">16dp</item>
         <item name="android:paddingRight">16dp</item>
     </style>
-    <!-- From: file:/usr/local/google/buildbot/repo_clients/https___googleplex-android.googlesource.com_a_platform_manifest.git/mnc-sdk-release/frameworks/support/v7/preference/res/values/themes.xml -->
+    <!-- From: file:/usr/local/google/buildbot/repo_clients/https___googleplex-android.googlesource.com_a_platform_manifest.git/mnc-supportlib-release/frameworks/support/v7/preference/res/values/themes.xml -->
     <eat-comment/>
     <style name="PreferenceThemeOverlay">
         <item name="preferenceScreenStyle">@style/Preference.PreferenceScreen</item>
