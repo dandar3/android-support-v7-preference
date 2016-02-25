@@ -23,4 +23,3 @@
     android:paddingTop="0dp"
     android:paddingBottom="0dp"
     android:clipToPadding="false" />
-<!-- From: file:/usr/local/google/buildbot/src/googleplex-android/mnc-supportlib-release/frameworks/support/v7/preference/res/layout/preference_recyclerview.xml -->

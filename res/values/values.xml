@@ -5,17 +5,13 @@
     <declare-styleable name="ListPreference"><attr format="reference" name="entries"/><attr name="android:entries"/><attr format="reference" name="entryValues"/><attr name="android:entryValues"/></declare-styleable>
     <declare-styleable name="MultiSelectListPreference"><attr name="entries"/><attr name="android:entries"/><attr name="entryValues"/><attr name="android:entryValues"/></declare-styleable>
     <declare-styleable name="Preference"><attr name="icon"/><attr name="android:icon"/><attr format="string" name="key"/><attr name="android:key"/><attr name="title"/><attr name="android:title"/><attr format="string" name="summary"/><attr name="android:summary"/><attr format="integer" name="order"/><attr name="android:order"/><attr format="string" name="fragment"/><attr name="android:fragment"/><attr name="layout"/><attr name="android:layout"/><attr format="reference" name="widgetLayout"/><attr name="android:widgetLayout"/><attr format="boolean" name="enabled"/><attr name="android:enabled"/><attr format="boolean" name="selectable"/><attr name="android:selectable"/><attr format="string" name="dependency"/><attr name="android:dependency"/><attr format="boolean" name="persistent"/><attr name="android:persistent"/><attr format="string|boolean|integer|reference|float" name="defaultValue"/><attr name="android:defaultValue"/><attr format="boolean" name="shouldDisableView"/><attr name="android:shouldDisableView"/></declare-styleable>
-    <declare-styleable name="PreferenceFragmentCompat"><attr name="layout"/><attr name="android:layout"/></declare-styleable>
+    <declare-styleable name="PreferenceFragmentCompat"><attr name="android:layout"/><attr name="android:divider"/><attr name="android:dividerHeight"/></declare-styleable>
     <declare-styleable name="PreferenceGroup"><attr format="boolean" name="orderingFromXml"/><attr name="android:orderingFromXml"/></declare-styleable>
     <declare-styleable name="PreferenceImageView"><attr format="dimension" name="maxWidth"/><attr name="android:maxWidth"/><attr format="dimension" name="maxHeight"/><attr name="android:maxHeight"/></declare-styleable>
+    <declare-styleable name="PreferenceTheme"><attr format="reference" name="preferenceTheme"/><attr format="reference" name="preferenceScreenStyle"/><attr format="reference" name="preferenceActivityStyle"/><attr format="reference" name="preferenceFragmentStyle"/><attr format="reference" name="preferenceFragmentCompatStyle"/><attr format="reference" name="preferenceCategoryStyle"/><attr format="reference" name="preferenceStyle"/><attr format="reference" name="preferenceInformationStyle"/><attr format="reference" name="checkBoxPreferenceStyle"/><attr format="reference" name="yesNoPreferenceStyle"/><attr format="reference" name="dialogPreferenceStyle"/><attr format="reference" name="editTextPreferenceStyle"/><attr format="reference" name="ringtonePreferenceStyle"/><attr format="reference" name="preferenceLayoutChild"/><attr format="reference" name="preferencePanelStyle"/><attr format="reference" name="preferenceHeaderPanelStyle"/><attr format="reference" name="preferenceListStyle"/><attr format="reference" name="preferenceFragmentListStyle"/><attr format="dimension" name="preferenceFragmentPaddingSide"/><attr format="reference" name="switchPreferenceStyle"/><attr format="reference" name="switchPreferenceCompatStyle"/><attr format="reference" name="seekBarPreferenceStyle"/></declare-styleable>
     <declare-styleable name="SwitchPreferenceCompat"><attr name="summaryOn"/><attr name="android:summaryOn"/><attr name="summaryOff"/><attr name="android:summaryOff"/><attr format="string" name="switchTextOn"/><attr name="android:switchTextOn"/><attr format="string" name="switchTextOff"/><attr name="android:switchTextOff"/><attr name="disableDependentsState"/><attr name="android:disableDependentsState"/></declare-styleable>
-    <declare-styleable name="Theme"><attr format="reference" name="preferenceTheme"/><attr format="reference" name="preferenceScreenStyle"/><attr format="reference" name="preferenceActivityStyle"/><attr format="reference" name="preferenceFragmentStyle"/><attr format="reference" name="preferenceCategoryStyle"/><attr format="reference" name="preferenceStyle"/><attr format="reference" name="preferenceInformationStyle"/><attr format="reference" name="checkBoxPreferenceStyle"/><attr format="reference" name="yesNoPreferenceStyle"/><attr format="reference" name="dialogPreferenceStyle"/><attr format="reference" name="editTextPreferenceStyle"/><attr format="reference" name="ringtonePreferenceStyle"/><attr format="reference" name="preferenceLayoutChild"/><attr format="reference" name="preferencePanelStyle"/><attr format="reference" name="preferenceHeaderPanelStyle"/><attr format="reference" name="preferenceListStyle"/><attr format="reference" name="preferenceFragmentListStyle"/><attr format="dimension" name="preferenceFragmentPaddingSide"/><attr format="reference" name="switchPreferenceStyle"/><attr format="reference" name="switchPreferenceCompatStyle"/><attr format="reference" name="seekBarPreferenceStyle"/></declare-styleable>
-    <!-- From: file:/usr/local/google/buildbot/src/googleplex-android/mnc-supportlib-release/frameworks/support/v7/preference/res/values/strings.xml -->
-    <eat-comment/>
     <string name="v7_preference_off">OFF</string>
     <string name="v7_preference_on">ON</string>
-    <!-- From: file:/usr/local/google/buildbot/src/googleplex-android/mnc-supportlib-release/frameworks/support/v7/preference/res/values/styles.xml -->
-    <eat-comment/>
     <style name="Preference">
         <item name="android:layout">@layout/preference</item>
     </style>
@@ -50,16 +46,15 @@
     <style name="PreferenceFragment">
         <item name="android:paddingLeft">0dp</item>
         <item name="android:paddingRight">0dp</item>
+        <item name="android:divider">?android:attr/listDivider</item>
     </style>
     <style name="PreferenceFragmentList">
         <item name="android:paddingLeft">16dp</item>
         <item name="android:paddingRight">16dp</item>
     </style>
-    <!-- From: file:/usr/local/google/buildbot/src/googleplex-android/mnc-supportlib-release/frameworks/support/v7/preference/res/values/themes.xml -->
-    <eat-comment/>
     <style name="PreferenceThemeOverlay">
         <item name="preferenceScreenStyle">@style/Preference.PreferenceScreen</item>
-        <item name="preferenceFragmentStyle">@style/PreferenceFragment</item>
+        <item name="preferenceFragmentCompatStyle">@style/PreferenceFragment</item>
         <item name="preferenceCategoryStyle">@style/Preference.Category</item>
         <item name="preferenceStyle">@style/Preference</item>
         <item name="preferenceInformationStyle">@style/Preference.Information</item>
