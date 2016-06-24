@@ -14,13 +14,17 @@
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License
   -->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
-<!-- Layout used by CheckBoxPreference for the checkbox style. This is inflated
-     inside android.R.layout.preference. -->
-<CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@android:id/checkbox"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:focusable="false"
-    android:clickable="false"
-    android:background="@null" />
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
+
+    <include layout="@layout/preference" />
+
+</FrameLayout>
