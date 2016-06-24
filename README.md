@@ -11,7 +11,7 @@ Eclipse library project based on:<br/>
 - https://developer.android.com/topic/libraries/support-library/revisions.html
 - https://developer.android.com/topic/libraries/support-library/features.html#v7-preference
 
-** SVN checkout:**
+**SVN checkout:**
 - `Eclipse ADT`<br/>
   https://github.com/dandar3/android-support-v7-preference/tags/24.0.0
 - `Eclipse Andmore`<br/>
