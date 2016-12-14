@@ -10,7 +10,12 @@
     <declare-styleable name="PreferenceGroup"><attr format="boolean" name="orderingFromXml"/><attr name="android:orderingFromXml"/></declare-styleable>
     <declare-styleable name="PreferenceImageView"><attr format="dimension" name="maxWidth"/><attr name="android:maxWidth"/><attr format="dimension" name="maxHeight"/><attr name="android:maxHeight"/></declare-styleable>
     <declare-styleable name="PreferenceTheme"><attr format="reference" name="preferenceTheme"/><attr format="reference" name="preferenceScreenStyle"/><attr format="reference" name="preferenceActivityStyle"/><attr format="reference" name="preferenceFragmentStyle"/><attr format="reference" name="preferenceFragmentCompatStyle"/><attr format="reference" name="preferenceCategoryStyle"/><attr format="reference" name="preferenceStyle"/><attr format="reference" name="preferenceInformationStyle"/><attr format="reference" name="checkBoxPreferenceStyle"/><attr format="reference" name="yesNoPreferenceStyle"/><attr format="reference" name="dialogPreferenceStyle"/><attr format="reference" name="editTextPreferenceStyle"/><attr format="reference" name="ringtonePreferenceStyle"/><attr format="reference" name="dropdownPreferenceStyle"/><attr format="reference" name="preferenceLayoutChild"/><attr format="reference" name="preferencePanelStyle"/><attr format="reference" name="preferenceHeaderPanelStyle"/><attr format="reference" name="preferenceListStyle"/><attr format="reference" name="preferenceFragmentListStyle"/><attr format="dimension" name="preferenceFragmentPaddingSide"/><attr format="reference" name="switchPreferenceStyle"/><attr format="reference" name="switchPreferenceCompatStyle"/><attr format="reference" name="seekBarPreferenceStyle"/></declare-styleable>
+    <declare-styleable name="SeekBarPreference"><attr format="integer" name="min"/><attr name="android:max"/><attr name="android:layout"/><attr format="integer" name="seekBarIncrement"/><attr format="boolean" name="adjustable"/><attr format="boolean" name="showSeekBarValue"/></declare-styleable>
     <declare-styleable name="SwitchPreferenceCompat"><attr name="summaryOn"/><attr name="android:summaryOn"/><attr name="summaryOff"/><attr name="android:summaryOff"/><attr format="string" name="switchTextOn"/><attr name="android:switchTextOn"/><attr format="string" name="switchTextOff"/><attr name="android:switchTextOff"/><attr name="disableDependentsState"/><attr name="android:disableDependentsState"/></declare-styleable>
+    <dimen name="preference_icon_minWidth">0dp</dimen>
+    <dimen name="preference_seekbar_padding_end">22dp</dimen>
+    <dimen name="preference_seekbar_padding_start">0dp</dimen>
+    <dimen name="preference_seekbar_value_width">36dp</dimen>
     <string name="v7_preference_off">OFF</string>
     <string name="v7_preference_on">ON</string>
     <style name="Preference">
@@ -42,6 +47,11 @@
     </style>
     <style name="Preference.PreferenceScreen">
     </style>
+    <style name="Preference.SeekBarPreference">
+        <item name="android:layout">@layout/preference_widget_seekbar</item>
+        <item name="adjustable">true</item>
+        <item name="showSeekBarValue">true</item>
+    </style>
     <style name="Preference.SwitchPreferenceCompat">
         <item name="android:widgetLayout">@layout/preference_widget_switch_compat</item>
         <item name="android:switchTextOn">@string/v7_preference_on</item>
@@ -64,6 +74,7 @@
         <item name="preferenceInformationStyle">@style/Preference.Information</item>
         <item name="checkBoxPreferenceStyle">@style/Preference.CheckBoxPreference</item>
         <item name="switchPreferenceCompatStyle">@style/Preference.SwitchPreferenceCompat</item>
+        <item name="seekBarPreferenceStyle">@style/Preference.SeekBarPreference</item>
         <item name="dialogPreferenceStyle">@style/Preference.DialogPreference</item>
         <item name="editTextPreferenceStyle">@style/Preference.DialogPreference.EditTextPreference</item>
         <item name="preferenceFragmentListStyle">@style/PreferenceFragmentList</item>
