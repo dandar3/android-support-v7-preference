@@ -5,7 +5,9 @@
 	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/android-support-v4"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/android-support-compat"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/android-support-collections"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/android-support-fragment"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/android-support-v7-appcompat"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/android-support-v7-recyclerview"/>
 	<classpathentry kind="output" path="bin/classes"/>
